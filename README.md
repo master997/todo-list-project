@@ -15,4 +15,5 @@ Technologies Used:
 HTML: For the structure of the web application.
 
 CSS: For styling the application and making it visually appealing.
+
 JavaScript: For adding interactivity and handling task management functionalities.
