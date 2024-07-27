@@ -1,9 +1,12 @@
 "use strict";
+
+// setting up variables
+
 const taskInput = document.querySelector(".add-task-input");
-const addButton = document.querySelector(".add-task-button");
+const addbtn = document.querySelector(".addbtn");
 const taskList = document.querySelector(".task-list");
 
-function addTask() {
-  console.log("Task has been added");
-}
-addButton.addEventListener("click", addTask);
+// adding event listeners
+addbtn.addEventListener("click", function () {
+  console.log("button is clicked");
+});
