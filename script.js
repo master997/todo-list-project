@@ -8,5 +8,10 @@ const taskList = document.querySelector(".task-list");
 
 // adding event listeners
 addbtn.addEventListener("click", function () {
+  let taskValue = taskInput.value;
+  let newListItem = document.createElement("li");
+  newListItem.textContent = taskValue;
+  taskList.appendChild(newListItem);
+  taskInput.value = "";
   console.log("button is clicked");
 });
