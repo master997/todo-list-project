@@ -110,3 +110,7 @@ main {
   background-color: #b71c1c; /* Darker red background color on hover */
   border-color: #8b0000; /* Even darker red border on hover */
 }
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
