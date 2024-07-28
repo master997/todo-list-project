@@ -26,6 +26,9 @@ addbtn.addEventListener("click", function () {
   editBtn.textContent = "Edit";
   delBtn.textContent = "Delete";
   completeBtn.textContent = "Complete"; // Set text for complete button
+  editBtn.classList.add("edit"); // Add class for styling
+  delBtn.classList.add("delete"); // Add class for styling
+  completeBtn.classList.add("complete"); // Add class for styling
   newListItem.appendChild(editBtn);
   newListItem.appendChild(delBtn);
   newListItem.appendChild(completeBtn);
@@ -49,11 +52,3 @@ addbtn.addEventListener("click", function () {
 
   console.log(taskInput.value);
 });
-
-// CSS
-/*
-.completed {
-  text-decoration: line-through;
-  color: grey;
-}
-*/

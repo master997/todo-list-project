@@ -1,116 +1,144 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Set the font for the entire page */
-  display: flex; /* Use flexbox layout */
-  flex-direction: column; /* Arrange children elements in a column */
-  align-items: center; /* Center children elements horizontally */
-  justify-content: flex-start; /* Align children elements at the top */
-  height: 100vh; /* Set the height to 100% of the viewport height */
-  margin: 0; /* Remove default margin */
-  background-color: #e0e0e0; /* Light gray background color */
-  color: #333; /* Dark gray text color */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  background-color: #e0e0e0;
+  color: #333;
 }
+
 header {
-  background-color: #000001; /* Bolder black background color */
-  color: white; /* White text color */
-  padding: 40px 20px 20px 20px; /* Padding: top 40px, right 20px, bottom 20px, left 20px */
-  text-align: center; /* Center the text */
-  width: 100%; /* Full width of the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  margin-bottom: 20px; /* Space below the header */
+  background-color: #000001;
+  color: white;
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 header h1 {
-  margin: 0; /* Remove default margin */
-  font-size: 2.5em; /* Larger font size for the title */
+  margin: 0;
+  font-size: 2.5em;
 }
+
 main {
-  width: 90%; /* Width of the main container relative to its parent */
-  max-width: 600px; /* Maximum width for larger screens */
-  margin-top: 20px; /* Space above the main container */
-  background: white; /* White background for the container */
-  padding: 20px; /* Padding inside the container */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+  width: 90%;
+  max-width: 600px;
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .section-title {
-  font-size: 1.5em; /* Font size for the section title */
-  margin-bottom: 10px; /* Space below the section title */
-  color: #000204; /* Blue color matching the header */
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #000204;
 }
+
 .input-group {
-  display: flex; /* Use flexbox to arrange input and button in a row */
-  margin-bottom: 20px; /* Space below the input group */
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .add-task-input {
-  flex: 1; /* Allow the input to grow and fill available space */
-  padding: 10px; /* Padding inside the input */
-  border: 2px solid #1e88e5; /* Bolder blue border */
-  border-radius: 4px 0 0 4px; /* Rounded corners for the left side */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  font-size: 1.1em; /* Slightly larger font size */
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #1e88e5;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  font-size: 1.1em;
 }
 
-.add-task-button {
-  padding: 10px 20px; /* Padding: top and bottom 10px, left and right 20px */
-  background-color: #d32f2f; /* Bold red background color */
-  color: white; /* White text color */
-  border: none; /* No border */
-  border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 1.1em; /* Slightly larger font size */
-  transition: background-color 0.3s; /* Smooth transition for background color */
-}
-
-.add-task-button:hover {
-  background-color: #b71c1c; /* Darker red background color on hover */
-}
-.task-list {
-  list-style-type: none; /* Remove default list styles */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-  width: 100%; /* Full width of the container */
-}
-
-.task-list li {
-  background: #ffffff; /* White background for list items */
-  margin: 10px 0; /* Space above and below each list item */
-  padding: 15px; /* Padding inside each list item */
-  border: 2px solid #1e88e5; /* Bolder blue border */
-  border-radius: 4px; /* Rounded corners */
-  display: flex; /* Use flexbox to arrange content */
-  justify-content: space-between; /* Space between elements inside list items */
-  align-items: center; /* Center elements vertically */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
-  transition: background 0.3s, border 0.3s; /* Smooth transitions for background and border */
-}
-
-.task-list li:hover {
-  background: #f1f1f1; /* Slightly darker background on hover */
-  border-color: #1565c0; /* Darker blue border on hover */
-}
-
-.task-list li.completed {
-  text-decoration: line-through; /* Strikethrough text for completed tasks */
-  color: #757575; /* Gray color for completed tasks */
-}
 .addbtn {
-  padding: 10px 20px; /* Padding: top and bottom 10px, left and right 20px */
-  background-color: #d32f2f; /* Bold red background color */
-  color: white; /* White text color */
-  border: 2px solid #b71c1c; /* Add a border with a darker red color */
-  border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 1.1em; /* Slightly larger font size */
-  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for background color and border color */
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: 2px solid #b71c1c;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .addbtn:hover {
-  background-color: #b71c1c; /* Darker red background color on hover */
-  border-color: #8b0000; /* Even darker red border on hover */
+  background-color: #b71c1c;
+  border-color: #8b0000;
 }
-.completed {
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.task-list li {
+  background: #ffffff;
+  margin: 10px 0;
+  padding: 15px;
+  border: 2px solid #1e88e5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, border 0.3s;
+}
+
+.task-list li:hover {
+  background: #f1f1f1;
+  border-color: #1565c0;
+}
+
+.task-list li.completed {
   text-decoration: line-through;
-  color: grey;
+  color: #757575;
+  background-color: #f0f0f0;
+  border: 2px solid #b0b0b0;
+}
+
+/* General button styles */
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+/* Edit button styles */
+button.edit {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #45a049;
+}
+
+/* Delete button styles */
+button.delete {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #d32f2f;
+}
+
+/* Complete button styles */
+button.complete {
+  background-color: #008cba; /* Blue */
+  color: white;
+}
+
+button.complete:hover {
+  background-color: #007bb5;
 }
