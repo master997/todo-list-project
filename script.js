@@ -19,5 +19,42 @@ addBtn.addEventListener("click", function () {
   taskList.appendChild(newListItem);
   taskInput.value = "";
 
-  console.log("button is clicked");
+  //adding buttons for editing deleting and completing tasks
+  let editBtn = document.createElement("button");
+  let delBtn = document.createElement("button");
+  let completedBtn = document.createElement("button");
+
+  //setting button text content to edit,delete and complete
+  editBtn.textContent = "Edit";
+  delBtn.textContent = "Delete";
+  completedBtn.textContent = "Complete";
+
+  //adding the styles from the css
+  editBtn.classList.add("edit");
+  delBtn.classList.add("delete");
+  completedBtn.classList.add("complete");
+  //adding the buttons to the newlist item
+  newListItem.appendChild(completedBtn);
+  newListItem.appendChild(editBtn);
+  newListItem.appendChild(delBtn);
+
+  //editing functionality
+  editBtn.addEventListener("click", function () {
+    let newInput = prompt("Edit current task", taskValue);
+    if (newInput !== null && newInput.length !== 0) {
+      spanText.textContent = newInput;
+    }
+  });
+
+  // deleting button functionality
+  delBtn.addEventListener("click", function () {
+    newListItem.remove();
+  });
+
+  //complete button functionality
+
+  completedBtn.addEventListener("click", function () {
+    spanText.classList.toggle("completed");
+  });
+  console.log(taskValue);
 });
